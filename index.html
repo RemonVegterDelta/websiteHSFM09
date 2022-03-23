@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="kaas.css"
+<meta charset="utf-8">
+
+<script src="https://cdn.jsdelivr.net/npm/terraformer"></script>
+ <script src="https://unpkg.com/@terraformer/wkt"></script>
+
+<title>How to make IJsland great again</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin="">
+</script>
+
+</head>
+
+<body>
+
+	<div class="navbar"> 
+	<img src="Fotos/Logo.png" class="logo">
+	<input type="text" placeholder="Search..">
+	<ul>
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">BEDROOM</a></li>
+		<li><a href="#">DINING</a></li>
+		<li><a href="#">KITCHEN</a></li>
+		<li><a href="#">BACKYARD</a></li>
+	</ul>
+	</div>
+
+	<section>
+		<div class="overlay"></div>
+	<video autoplay muted loop src="/Fotos/ICELAND EPIC DRONE 4K HIGHLANDS abstract ROAD TRIP.mp4"></video>
+	</section>
+	
+	<div class="content">
+		<div class="col">
+		<h1>ICELAND</h1>
+		<p>Please help us. <br> We need help fron other countries, <br>
+			becauce the lions are dieing right now and thats not good!!!!!!!</p>
+	<div>
+		<button type="button"><span></span>SEE MORE</button>
+		<button type="button"><span></span>SUBSCRIBE</button>
+
+	</div>
+	</div>
+	<div class="col">
+		<div class="card card1">
+			<h5>Mountain</h5>
+		</div>
+		<div class="card card2">
+			<h5>Mountain</h5>
+		</div>
+		<div class="card card3">
+			<h5>Mountain</h5>
+		</div>
+		<div class="card card4">
+			<h5>Mountain</h5>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div class="sidebar">
+	<div class="iconbox">
+		<div class="side-text">
+			Wheater
+		</div>
+		<div class="icon">
+			<i class="fa fa-coffee"></i>
+		</div>
+	</div>
+	<div class="iconbox">
+		<div class="side-text">
+			Wheater
+		</div>
+		<div class="icon">
+			<i class="fa fa-coffee"></i>
+		</div>
+	</div>
+	<div class="iconbox">
+		<div class="side-text">
+			Wheater
+		</div>
+		<div class="icon">
+			<i class="fa fa-coffee"></i>
+		</div>
+	</div>
+	<div class="iconbox">
+		<div class="side-text">
+			Wheater
+		</div>
+		<div class="icon">
+			<i class="fa fa-coffee"></i>
+		</div>
+	</div>
+	<div class="iconbox">
+		<div class="side-text">
+			Wheater
+		</div>
+		<div class="icon">
+			<i class="fa fa-coffee"></i>
+		</div>
+	</div>
+		<div class="iconbox">
+		<div class="side-text">
+			Wheater
+		</div>
+		<div class="icon">
+			<i class="fa fa-coffee"></i>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+
+
+<div>
+	<h2>Some pictures of the nature in Iceland</h2>
+</div>
+
+	<div class="full-img" id="fullImgBox">
+		<img src="/Fotos/GINI3169.JPG" id="fullImg">
+		<span onclick="closeFullImg()">X</span>
+	</div>
+
+	<div class="img-gallery">
+			<img src="/Fotos/Vierkantluchtfoto.jpg" onclick="openFullImg(this.src)">
+			<img src="/Fotos/Vierkantluchtfoto.jpg" onclick="openFullImg(this.src)">
+			<img src="/Fotos/Vierkantluchtfoto.jpg" onclick="openFullImg(this.src)">
+			<img src="/Fotos/Vierkantluchtfoto.jpg" onclick="openFullImg(this.src)">
+			<img src="/Fotos/Vierkantluchtfoto.jpg" onclick="openFullImg(this.src)">
+			<img src="/Fotos/Vierkantluchtfoto.jpg" onclick="openFullImg(this.src)">
+			<img src="/Fotos/Vierkantluchtfoto.jpg" onclick="openFullImg(this.src)">
+			<img src="/Fotos/Vierkantluchtfoto.jpg" onclick="openFullImg(this.src)">
+			<img src="/Fotos/Vierkantluchtfoto.jpg" onclick="openFullImg(this.src)">
+			<img src="/Fotos/Vierkantluchtfoto.jpg" onclick="openFullImg(this.src)">
+			<img src="/Fotos/Vierkantluchtfoto.jpg" onclick="openFullImg(this.src)">
+			<img src="/Fotos/Vierkantluchtfoto.jpg" onclick="openFullImg(this.src)">
+			<img src="/Fotos/Vierkantluchtfoto.jpg" onclick="openFullImg(this.src)">
+			<img src="/Fotos/Vierkantluchtfoto.jpg" onclick="openFullImg(this.src)">
+			<img src="/Fotos/Vierkantluchtfoto.jpg" onclick="openFullImg(this.src)">
+			<img src="/Fotos/Vierkantluchtfoto.jpg" onclick="openFullImg(this.src)">
+	</div>
+
+	<script>
+		var fullImgBox = document.getElementById("fullImgBox");
+		var fullImg = document.getElementById("fullImg");
+
+		function openFullImg(pic){
+			fullImgBox.style.display = "flex"; 
+			fullImg.src = pic; 
+		}
+
+		function closeFullImg(){
+		fullImgBox.style.display = "none";
+		}
+	</script>
+
+
+
+
+
+
+
+<div>
+	<h2>Choose your plan for your holiday</h2>
+	<div class="price-row">
+		<div class="price-col">
+			<p>Starter</p>
+			<h3>€19 / month</h3>
+			<ul>
+				<li>1 website</li>
+				<li>1 website</li>
+				<li>1 website</li>
+				<li>1 website</li>
+				<li>1 website</li>
+				<li>1 website</li>
+			</ul>
+			<button>Add To Cart</button>
+		</div>
+		<div class="price-col">
+			<p>Advanced</p>
+			<h3>€19 / month</h3>
+			<ul>
+				<li>1 website</li>
+				<li>1 website</li>
+				<li>1 website</li>
+				<li>1 website</li>
+				<li>1 website</li>
+				<li>1 website</li>
+			</ul>
+			<button>Add To Cart</button>
+		</div>
+		<div class="price-col">
+			<p>Premium</p>
+			<h3>€19 / month</h3>
+			<ul>
+				<li>1 website</li>
+				<li>1 website</li>
+				<li>1 website</li>
+				<li>1 website</li>
+				<li>1 website</li>
+				<li>1 website</li>
+			</ul>
+			<button>Add To Cart</button>
+		</div>
+	</div>
+</div>
+
+
+
+
+	<div id="mapLeaflet"> 
+	<script> var map = L.map('mapLeaflet').setView([51.505, -0.09], 13);
+	
+	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+}).addTo( map );
+
+var marker = L.marker([51.5, -0.09]).addTo(map);
+
+var circle = L.circle([51.508, -0.11], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 500
+}).addTo(map);
+
+var polygon = L.polygon([
+    [51.509, -0.08],
+    [51.503, -0.06],
+    [51.51, -0.047]
+]).addTo(map);
+
+	</script></div>
+
+
+
+
+
+<p id = 'interactiveTitle'> </p>
+<button class="buttonx" id="zoomIn" onClick="zoomOnClick()">inzoomen</button>
+
+
+<script>
+
+//Lege geojson op leaflet maken
+	const geoJsonLayer = L.geoJSON().addTo(map);
+
+	function zoomOnClick(){
+		map.setView([52.38592744,4.58153538],14)
+	}
+
+
+//data ophalen
+fetch('https://geodata.nationaalgeoregister.nl/locatieserver/v3/lookup?id=gem-5d6cf3b7c87a93915c724628a6941214&fl=*')
+.then(response => response.json())
+.then(data =>{ 
+	const wkt = data.response.docs[0].geometrie_ll;
+// WKT omzetten naar Geojson
+const geojson = Terraformer.wktToGeoJSON(wkt);
+console.log(geojson);
+geoJsonLayer.addData(geojson);
+
+
+//Titel toevoegen
+const titel = document.getElementById
+('interactiveTitle');
+titel.style.color = '#009688'
+titel.append('Overveen')
+
+})
+
+
+
+const urlGeoserverWMSlaag = '//localhost:8080/geoserver/Aeres/wms?service=WMS&version=1.1.0&request=GetMap&layers=Aeres:Spoorvakken&styles=&bbox=634.5732789819012,306594.5543000576,284300.0254094796,636981.7698870846&width=659&height=768&srs=EPSG:28992&format=application/openlayers';
+
+// ADD a WMS layer
+const geoserverWMSLaag = L.tileLayer.wms('http://localhost:8080/geoserver/ows', {
+        'layers': 'Aeres:Spoorvakken',
+        'srs': 'EPSG:28992',
+        'format': 'image/png',
+        'transparent': true
+    }).addTo(mapLeaflet);
+
+
+const arrayVanPlaatsnamen = ['Haarlem','Overveen','Noord-Holland','Bloemendaal'];
+
+for (let index = 0; index <arrayVanPlaatsnamen.length; index++) {
+	const woonplaats = arrayVanPlaatsnamen[index];
+	
+
+	const node = document.createElement("button");
+	node.className = "button";
+	node.id = woonplaats ; 
+	const textnode = document.createTextNode(woonplaats);
+	node.appendChild(textnode);
+
+	document.getElementById("mapLeaflet").appendChild(node);
+
+	node.addEventListener('click',function(){
+		console.log(node.id)
+
+	fetch('https://geodata.nationaalgeoregister.nl/locatieserver/free?bq=type:woonplaats&q'+node.id)
+	.then(response => response.json())
+	.then(data =>{
+		console.log(data.response.docs[0].id)
+
+
+
+//data ophalen
+fetch('https://geodata.nationaalgeoregister.nl/locatieserver/v3/lookup?fl=*&id=' + id) 
+.then(response => response.json())
+.then(data =>{ 
+	const wkt = data.response.docs[0].geometrie_ll;
+// WKT omzetten naar Geojson
+const geojson = Terraformer.wktToGeoJSON(wkt);
+console.log(geojson);
+geoJsonLayer.addData(geojson);
+
+
+})
+
+
+
+
+
+		})
+	})	
+};
+</script>
+
+
+
+
+</body>
+</html>
