@@ -64,8 +64,8 @@ for (let index = 0; index <arrayVanPlaatsnamen.length; index++) {
 	const woonplaats = arrayVanPlaatsnamen[index];
 	
 
-	const node = document.createElement("buttony");
-	node.className = "buttony";
+	const node = document.createElement("button");
+	node.className = "button";
 	node.id = woonplaats ; 
 	const textnode = document.createTextNode(woonplaats);
 	node.appendChild(textnode);

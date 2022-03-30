@@ -1,6 +1,6 @@
 
-var map = new ol.Map({
-    target: 'mapOpenLayers',
+var mapOpenLayers = new ol.Map({
+    target: 'mapOpenlayers',
     layers: [
       new ol.layer.Tile({
         source: new ol.source.OSM()
