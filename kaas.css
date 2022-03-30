@@ -37,16 +37,7 @@ p {
   transition: 0.5s;
 }
 
-video {
-  width: 100%;
-}
 
-.overlay {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 113.4%;
-  width: 100%;
-}
 
 .navbar {
   height: 10%;
@@ -58,6 +49,17 @@ video {
   justify-content: space-between;
   background-color: #009688;
 }
+
+.fotoachtergrond{
+  background-image: url(/Fotos/LuchtfotoNL.jpg);
+  height: 100%;
+  margin: 60%;
+  height: 50%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 .text {
   margin-right: 300px;
@@ -147,6 +149,8 @@ button {
   position: relative;
   overflow: hidden;
 }
+
+
 
 span {
   background: #009688;
@@ -397,6 +401,13 @@ h2 {
 }
 
 #mapLeaflet {
+  height: 300px;
+  width: 25%;
+  margin-top: 30px;
+  margin-left: 150px;
+}
+
+#mapLibre {
   height: 300px;
   width: 25%;
   margin-top: 30px;
