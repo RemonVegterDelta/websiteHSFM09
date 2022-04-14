@@ -42,23 +42,18 @@ p {
 .navbar {
   height: 10%;
   width: 100%;
-  margin: auto;
+  margin: 0 auto;
   padding: 5px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #009688;
+  z-index: 99999;
+  float: none;
+  position: relative;
 }
 
-.fotoachtergrond{
-  background-image: url(/Fotos/LuchtfotoNL.jpg);
-  height: 100%;
-  margin: 60%;
-  height: 50%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+
 
 
 .text {
@@ -115,6 +110,10 @@ p {
   display: flex;
   height: 88%;
   align-items: center;
+  background-image: url(/Fotos/LuchtfotoNL.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .col {
@@ -272,6 +271,14 @@ nav {
   min-width: 140px;
 }
 
+
+
+.fotogallerij{
+display: block;
+position: static;
+margin-top: 700px;
+}
+
 .img-gallery {
   width: 80%;
   margin: 0px auto 50px;
@@ -419,4 +426,21 @@ h2 {
   width: 25%;
   margin-top: 30px;
   margin-left: 150px;
+}
+
+.chart{
+  height: 300px;
+  width: 25%;
+  margin-left: 150px;
+}
+
+.flourish-embed{
+  height: 300px;
+  width: 25%;
+  margin-top: 90px;
+  margin-left: 150px;
+}
+
+.mapgoogle{
+  margin-top: 30px;
 }
